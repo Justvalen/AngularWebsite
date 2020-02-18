@@ -1,0 +1,80 @@
+.graph-black-background {
+  background: rgba(0, 0, 0, 0.90);
+  border-radius: 16px;
+  margin: auto;
+  max-width: 80%;
+  padding: 5px;
+  padding-top: 20px;
+  position: relative;
+  z-index: -1;
+}
+
+.picture-pad {
+  padding: 20px;
+}
+
+.list-pad {
+  padding-left: 30px;
+}
+
+.titanic-project-header-border {
+  background: rgba(0, 0, 0, 0.90);
+  border-radius: 16px;
+  margin: auto;
+  margin-top: 5%;
+  width: 900px;
+  max-width: 1050px;
+  padding: 5px;
+  position: relative;
+  z-index: -1;
+}
+
+.intro-styles {
+  font-size: 20px;
+}
+
+.list-style {
+  -webkit-column-count: 4;
+  -webkit-column-gap: 10px;
+  -moz-column-count: 4;
+  -moz-column-gap: 10px;
+  column-count: 4;
+  column-gap: 10px;
+  text-align: center;
+  list-style-position: outside;
+}
+
+.list-style2 {
+  column-count: 2;
+  column-gap: 10px;
+  text-align: center;
+  list-style-position: outside;
+}
+
+.pg-font-size {
+  font-size: 25px;
+}
+
+.pg-width {
+  max-width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.list-font-size {
+  font-size: 20px;
+}
+
+.container-width {
+  max-width: 95%;
+}
+
+.background-settings {
+  background: url(https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/blue-and-white-abstract-painting-1802268.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  z-index: -1;
+}

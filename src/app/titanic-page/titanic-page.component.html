@@ -1,0 +1,86 @@
+<div class="background-settings">
+  <h1 class="titanic-project-header-border center">Titanic Exploratory Data Analysis</h1>
+  <ul class="graph-black-background list-pad white" style='margin-top: 3%'>
+    <li><p class="intro-styles">The data that was used for this project can be found on kaggle via this link <a href='https://www.kaggle.com/c/titanic/data'>titanic-machine-learning-data</a>.</p></li>
+    <li><p class="intro-styles">This project is about exploring the Titanic data set and finding key insights that may be prove useful for machine learning</p></li>
+    <li><p class="intro-styles">This project was created using Python3 in Jupyter Notebook and all graphs/charts were created using Seaborn.</p></li>
+  </ul>
+
+  <h1 class="graph-black-background" style='margin-top: 2%; max-width: 70%'>
+    <div *ngFor="let graph of graphs">
+      <div *ngIf="graph.title==='Titanic-Project-Image-1'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          From this data we can see that the number of females denoted in the 1 column (1 = Survived) is greater than the males. Indicating that more
+          females survived than males. In the 0 column the difference is far greater showing just how many more males died during the sinking of the Titanic.
+        </p>
+      </div>
+      <div *ngIf="graph.title==='Titanic-Project-Image-2'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          Expanding on the previous graph we can see that from the data 74% of the females survived vs 19% of males. The remaining percentage missing are gender
+          entries for which there was no value given.
+        </p>
+      </div>
+      <div *ngIf="graph.title==='Titanic-Project-Image-3'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          Lets now try to analyze more specific parts of the demographics given in the data. We can see from this graph the majority of tickets sold were lower passenger class tickets.
+          In the fact the average price of the tickets in the data provided was $32.20. From this we should ask ourselves a few questions.
+        </p>
+        <ol class="intro-styles pg-font-size pg-width">
+          <li><p class="list-font-size">Did the passenger class of ticketholders affect the probability of survival?</p></li>
+          <li><p class="list-font-size">If it did, to what affect did it affect their odds of survival?</p></li>
+        </ol>
+      </div>
+      <div *ngIf="graph.title==='Titanic-Project-Image-4'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          This next bar chart can answer many of our questions. It shows the percentage of survival based on a ticketholders passenger class. Now for those who are not familiar with the story of
+          the Titanic let me explain the difference. The first class passengers were the most wealthy and were located more towards the top of the deck of the ship. You could think of second
+          class as middle class and third class as lower class. These second and third classes were located from the middle of the ship down towards the bottom and in case of an emergency would have
+          to traverse vertically up the ship. Now let us answer some of the previous questions.
+        </p>
+        <ol class="intro-styles pg-font-size pg-width" style='max-width: 80%'>
+          <li><p class="list-font-size">We can see that 63% of first class tickerholders survived regardless of their gender. Compared to the measely survival rate of the third class with a 24% survival rate.
+          With this big of a difference I think we can safely say it played a major role in survival especially since given the context of their physical locations on the ship.</p></li>
+          <li><p class="list-font-size">As for the effect of this difference it is quite apparant. A difference of survival rate between the highest class and lowest class is 39%. We can see a mean change of survival
+          of 19.5% from class to class. It is self evident the higher class you possess the higher your odds of survival.</p></li>
+        </ol>
+      </div>
+      <div *ngIf="graph.title ==='Titanic-Project-Image-5'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          Now let us look at the age distribution for passengers of the Titanic. It appears to follow a normal distribution with some small outliers of children in the 0-4 years of age section. I also found
+          that the average age of a passenger from the Titanic dataset was 29 years old.
+        </p>
+      </div>
+      <div *ngIf="graph.title === 'Titanic-Project-Image-6'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          These graphs combine some of the previous information we have been looking at. It shows the distribution of age of those who died and survived by their passenger classes. The graphs are paired in descending order
+          by passenger classes with those who died on the left and those who survived on the right. Take a moment to understand the graphs and we'll start to look at some findings.
+        </p>
+        <ol class="intro-styles pg-font-size pg-width">
+          <li><p class="list-font-size">In the left bottom most graph we can see that from passnger class 3 the majority of deaths came from young adults in the age group 20-30. This is also the case for the second class which is located right above the current graph. The first class, however, shows something different.
+          It is apparant that more of their deaths came from older age groups in the range 40-60.</p></li>
+          <li><p class="list-font-size">Now I will direct you to the top right most graph to look at the passengers of the first class who survived. It seems to follow a normal distribution skewed a little to the left. Overall though there is a healthy amount of survival.</p></li>
+          <li><p class="list-font-size">Now an interesting part of this data lay in the remaining two graphs. One of the histroic sayings that is remembered from the sinking of the Titanic was "Women and children first in the lifeboats!". This can be seen here in the second and third
+          passenger classes survival in the bottom right two graphs. There are outliers in the age groups 0-4 for both classes that were not present for the first class.</p></li>
+        </ol>
+      </div>
+      <div *ngIf="graph.title ==='Titanic-Project-Image-7'">
+        <img class="container-width picture-pad" src="{{graph.image}}"/>
+        <p class="center white picture-pad white intro-styles pg-font-size pg-width">
+          While were on the topic of who got precendence first let us focus in on the rate of survival based on the number of siblings/family one had. From this graph we can infer a few things.
+        </p>
+        <ol class="intro-styles pg-font-size pg-width">
+          <li><p class="list-font-size">It appears that people with more siblings/family have had less probability to survive. With a low percentage of around 17% if you had four siblings versus a high of around 53% if you had just one.</p></li>
+          <li><p class="list-font-size">It is important to note however, that if you had no siblings/family then your odds were not higher as seen in the first column. Those odds were 34% and this could possibly be due to the fact that it may have between
+          harder to get into a lifeboat without a child to accompany. Hence giving other people precedence.</p></li>
+        </ol>
+      </div>
+</div>
+
+
+

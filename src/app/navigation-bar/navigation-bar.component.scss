@@ -1,0 +1,20 @@
+.fixed {
+  position: fixed;
+  white-space: nowrap;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.my-navbar {
+  min-height: 7%;
+  max-height: 7%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+.small-container {
+  max-width: 10%;
+}
+

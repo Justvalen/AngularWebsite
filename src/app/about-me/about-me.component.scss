@@ -1,0 +1,28 @@
+.about-me-header {
+  margin: auto;
+  margin-top: 5%;
+  background: rgba(0, 0, 0, 0.99);
+  border-radius: 16px;
+  width: 300px;
+  max-width: 350px;
+  max-height: 120px;
+  position: relative;
+  z-index: -1;
+}
+
+.about-me-text-box {
+  margin: auto;
+  margin-top: 3%;
+  background: rgba(0, 0, 0, 0.99);
+  border-radius: 16px;
+  width: 70%;
+  max-width: 80%;
+  padding: 10px;
+  position: relative;
+  z-index: -1;
+}
+
+.about-me-paragraph-font {
+  font-size: 20px;
+}
+
