@@ -1,11 +1,11 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit, Output} from '@angular/core';
 import { RestApiService } from '../services/rest-api.service';
 import { Graph } from '../graph';
 
 @Component({
   selector: 'app-la-traffic-page',
   templateUrl: './la-traffic-page.component.html',
-  styleUrls: ['./la-traffic-page.component.scss']
+  styleUrls: ['./la-traffic-page.component.scss'],
 })
 export class LaTrafficPageComponent implements OnInit {
 

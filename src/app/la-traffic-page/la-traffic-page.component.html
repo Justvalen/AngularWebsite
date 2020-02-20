@@ -1,91 +1,135 @@
-<div class="background-settings">
-  <h1 class="la-project-header-border center">Los Angeles Traffic Analysis</h1>
-  <ul class="graph-black-background list-pad white" style='margin-top: 3%'>
-    <li><p class="intro-styles">The data that was used for this project can be found on kaggle via this link <a href='https://www.kaggle.com/cityofLA/los-angeles-traffic-collision-data/version/3'>los-angeles-traffic-collision-data</a>.</p></li>
-    <li><p class="intro-styles">This project is about highlighting insights about LA Traffic collisions that could be obtained by analyzing the data.</p></li>
-    <li><p class="intro-styles">This project was created using Python3 in Jupyter Notebook and all graphs/charts were created using Matplotlib.</p></li>
-  </ul>
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center" style="display: block;">
+    <h1 class="display-4" style="font-size: 65px;">Los Angeles Traffic Analysis</h1>
+    <ul class="lead para-space">
+      <li><p class="lead">The data that was used for this project can be found on kaggle via this link <a href='https://www.kaggle.com/cityofLA/los-angeles-traffic-collision-data/version/3'>los-angeles-traffic-collision-data</a>.</p></li>
+      <li><p class="lead">This project is about highlighting insights about LA Traffic collisions that could be obtained by analyzing the data.</p></li>
+      <li><p class="lead">This project was created using Python3 in Jupyter Notebook and all graphs/charts were created using Matplotlib.</p></li>
+    </ul>
+  </div>
+</div>
 
-  <h1 class="graph-black-background" style='margin-top: 2%'>
-    <div *ngFor="let graph of graphs; let i = index">
-      <div *ngIf="i < 5">
-        <img class="container-width picture-pad" src="{{graph.image}}"/>
-        <div *ngIf="graph.title==='LA-Project-Image-1'">
-          <p class="center white picture-pad white intro-styles pg-font-size pg-width">
-            These are the top 5 demographics represented in the LA Collosion Traffic data set. All demographics data were used in the findings below, but would make for a
-            cluttered pie chart so they were only temporarily ommited visually. This list below is the total count of individuals who belong to their according racial group in decending order.
-          </p>
-          <ol class="intro-styles list-style pg-font-size pg-width" style='max-width: 90%'>
-            <li><p class="list-font-size">Hispanic (151,053)</p></li>
-            <li><p class="list-font-size">White (98,077)</p></li>
-            <li><p class="list-font-size">Other (73,718)</p></li>
-            <li><p class="list-font-size">Black (56,541)</p></li>
-            <li><p class="list-font-size">Korean (3,542)</p></li>
-            <li><p class="list-font-size">Filipino (1,269)</p></li>
-            <li><p class="list-font-size">Chinese (631)</p></li>
-            <li><p class="list-font-size">Japanese (243)</p></li>
-            <li><p class="list-font-size">Hawaiian (196)</p></li>
-            <li><p class="list-font-size">Pacific Islander (167)</p></li>
-            <li><p class="list-font-size">Vietnamese (166)</p></li>
-            <li><p class="list-font-size">American Indian/Alaskan Native(128)</p></li>
-            <li><p class="list-font-size">Asian Indian (109)</p></li>
-          </ol>
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center">
+    <img class="center" src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/la-traffic-race-distribution-pie-chart.png"/>
+    <p class="lead left para-space">These are the top 5 demographics represented in the LA Collosion Traffic data set. All demographics data were used in the findings below, but would make for a
+    cluttered pie chart so they were only temporarily ommited visually. This list below is the total count of individuals who belong to their according racial group in decending order.
+    </p>
+    <ol class="list-style list-width" style='max-width: 90%'>
+      <li><p class="lead">Hispanic (151,053)</p></li>
+      <li><p class="lead">White (98,077)</p></li>
+      <li><p class="lead">Other (73,718)</p></li>
+      <li><p class="lead">Black (56,541)</p></li>
+      <li><p class="lead">Korean (3,542)</p></li>
+      <li><p class="lead">Filipino (1,269)</p></li>
+      <li><p class="lead">Chinese (631)</p></li>
+      <li><p class="lead">Japanese (243)</p></li>
+      <li><p class="lead">Hawaiian (196)</p></li>
+      <li><p class="lead">Pacific Islander (167)</p></li>
+      <li><p class="lead">Vietnamese (166)</p></li>
+      <li><p class="lead">American Indian/Alaskan Native(128)</p></li>
+      <li><p class="lead">Asian Indian (109)</p></li>
+    </ol>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center">
+    <img class="center" src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/la-traffic-accidents-per-day-graph.png">
+    <p class="lead left para-space">
+      This graph shows the aggregated data for daily accidents in the LA Traffic Collosion data set. The red dashed lines are the Upper Control Limit (UCL)
+      and the Lower Control Limit (LCL). These limits are 3 standard deviations away from the mean. Which can be found in the middle with a solid red line.
+      The years are further broken down into quarters so that we may observe different times of the year. From intially viewing the data there are a couple of things that stand out.
+    </p>
+    <ol class="list-width para-space">
+      <li><p class="lead">Traffic spikes seem to increase during holiday periods such as christmas and during periods of increased travel such as summer.</p></li>
+      <li><p class="lead">The overall count of accidents appear to be increasing every year as evidenced by the skewing to the right.</p></li>
+    </ol>
+    <p class="lead para-space" style="font-size: 18px">
+      Note: In that time Los Angeles' population from 2010-2018 saw an average year to year growth of approximately %1.52. Growth data can be viewed here <a href='http://worldpopulationreview.com/us-counties/ca/los-angeles-county-population/'>link</a>
+    </p>
+    <ul class="list-width para-space">
+      <li><p class="lead">Mean Daily Accidents: 110.</p></li>
+      <li><p class="lead">Std for Daily Accidents: 19.</p></li>
+    </ul>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center">
+    <img class="center" src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/la-traffic-accidents-per-month-graph.png">
+    <p class="lead left para-space">
+      While the aggregated graph showing the daily accidents was more clustered, this one highlights the insight we noticed more clearly. Indeed the accidents
+      per month from the years 2010-2019 have been increasing and more specifically have been on the rise since mid 2013. That is not all however. That link I provided earlier
+      about Los Angeles' growth shows an important detail.
+    </p>
+    <ol class="list-width para-space">
+      <li><p class="lead">Since the year 2011 the growth rate for Los Angeles started to crawl and in fact slowly started to lose growth until the year 2017 where it actually entered negative growth.</p></li>
+      <li><p class="lead">Knowing this information we can look at the graph again and see that in those recent years the number of accidents began to stagnate and remain arguably stable.</p></li>
+    </ol>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center">
+    <img class="center" src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/la-traffic-accidents-by-day-graph.png">
+    <p class="lead left para-space">
+      This next bar chart shows us an interesting tidbit. It seems that Los Angeles' number of accidents seem to increase from Saturday to an eventual high of Thursday before tapering off and repeating.
+      From this we can infer a couple of things.
+    </p>
+    <ol class="list-width para-space">
+      <li><p class="lead">Thursday is the most dangerous day to drive. Statstically speaking from this data, you would be more likely to have an accident on that day.</p></li>
+      <li><p class="lead">You are more likely to have an accident during the week than on the weekends. This obviously has many attributing factors, but in a city like Los Angeles I believe a fair guess would lay with people commuting to work.</p></li>
+      <li><p class="lead">Beyond the risks of driving on Thursday. The number of accidents is unusually higher than the other days of the week. As if to imply there is a direct causation for this. I suppose a native Angeleno could speak more to the findings.</p></li>
+    </ol>
+  </div>
+</div>
+
+<div class="jumbotron jumbotron-fluid jumbo-resize">
+  <div class="container center">
+    <img class="center" src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/la-traffic-accidents-by-race-and-time-of-day-graph.png">
+    <p class="lead left para-space">
+      Lastly, we have a heatmap indicating the frequency that each demographic is having accidents relative to the time of day. Outside of the top 5 demographics which were shown in the first
+      graph it is more of a stretch to draw conclusive results from the other demographics due to their population size. I, however, for the sake of using all data provided decided to list them in
+      the event future data can be found. From studying the heatmap I came away with these key insights.
+    </p>
+    <ol class="list-width para-space">
+      <li><p class="lead">Traffic accidents in Los Angeles seem to pick up from about 7am to 7pm (hours 7-19). It is also notably very bad from 5pm to 7pm (hours 17-19) which is apparantly LA's version of rush hour.</p></li>
+      <li><p class="lead">The frequency at which certain demographics seem to get involved in car accidents is quite consistent across the spectrum. Which is indicative that it is not so much an attributing factor to LA traffic accidents and that certain statistical suspects lay elsewhere.</p></li>
+    </ol>
+  </div>
+</div>
+
+<footer>
+  <div class="footer" id="footer" style="margin-top: 5rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-nowrap">
+            <h1 style="margin-top: 2rem; color: white;">Justin's Website</h1>
         </div>
-        <div *ngIf="graph.title==='LA-Project-Image-2'">
-          <p class="center white picture-pad white intro-styles pg-font-size pg-width">
-            This graph shows the aggregated data for daily accidents in the LA Traffic Collosion data set. The red dashed lines are the Upper Control Limit (UCL)
-            and the Lower Control Limit (LCL). These limits are 3 standard deviations away from the mean. Which can be found in the middle with a solid red line.
-            The years are further broken down into quarters so that we may observe different times of the year. From intially viewing the data there are a couple of things that stand out.
-          </p>
-          <div>
-              <ol class="intro-styles pg-font-size pg-width">
-                <li><p class="list-font-size">Traffic spikes seem to increase during holiday periods such as christmas and during periods of increased travel such as summer.</p></li>
-                <li><p class="list-font-size">The overall count of accidents appear to be increasing every year as evidenced by the skewing to the right.</p></li>
-              </ol>
-          </div>
-          <p class="center white picture-pad white intro-styles pg-width" style="font-size: 18px">
-            Note: In that time Los Angeles' population from 2010-2018 saw an average year to year growth of approximately %1.52. Growth data can be viewed here <a href='http://worldpopulationreview.com/us-counties/ca/los-angeles-county-population/'>link</a>
-          </p>
-          <ol class="intro-styles pg-font-size pg-width" start="3">
-            <li><p class="list-font-size">Mean Daily Accidents: 110.</p></li>
-            <li><p class="list-font-size">Std for Daily Accidents: 19.</p></li>
-          </ol>
+        <div class="col-lg-3 col-sm-2 col-xs-3 text-nowrap">
+          <h3 style="margin-top: .5rem;"> Contact </h3>
+          <ul>
+              <li><a class="email" style="font-size: 20px; color: white;">jst.valen@gmail.com</a></li>
+              <br/>
+              <li><a class="email" style="font-size: 20px; color: white;">(559)-731-5551</a></li>
+          </ul>
         </div>
-        <div *ngIf="graph.title==='LA-Project-Image-3'">
-          <p class="center white picture-pad white intro-styles pg-font-size pg-width">
-            While the aggregated graph showing the daily accidents was more clustered, this one highlights the insight we noticed more clearly. Indeed the accidents
-            per month from the years 2010-2019 have been increasing and more specifically have been on the rise since mid 2013. That is not all however. That link I provided earlier
-            about Los Angeles' growth shows an important detail.
-          </p>
-          <ol class="intro-styles pg-font-size pg-width">
-            <li><p class="list-font-size">Since the year 2011 the growth rate for Los Angeles started to crawl and in fact slowly started to lose growth until the year 2017 where it actually entered negative growth.</p></li>
-            <li><p class="list-font-size">Knowing this information we can look at the graph again and see that in those recent years the number of accidents began to stagnate and remain arguably stable.</p></li>
-          </ol>
-        </div>
-        <div *ngIf="graph.title==='LA-Project-Image-4'">
-          <p class="center white picture-pad white intro-styles pg-font-size pg-width">
-            This next bar chart shows us an interesting tidbit. It seems that Los Angeles' number of accidents seem to increase from Saturday to an eventual high of Thursday before tapering off and repeating.
-            From this we can infer a couple of things.
-          </p>
-          <ol class="intro-styles pg-font-size pg-width">
-            <li><p class="list-font-size">Thursday is the most dangerous day to drive. Statstically speaking from this data, you would be more likely to have an accident on that day.</p></li>
-            <li><p class="list-font-size">You are more likely to have an accident during the week than on the weekends. This obviously has many attributing factors, but in a city like Los Angeles I believe a fair guess would lay with people commuting to work.</p></li>
-            <li><p class="list-font-size">Beyond the risks of driving on Thursday. The number of accidents is unusually higher than the other days of the week. As if to imply there is a direct causation for this. I suppose a native Angeleno could speak more to the findings.</p></li>
-          </ol>
-        </div>
-        <div *ngIf="graph.title==='LA-Project-Image-5'">
-          <p class="center white picture-pad white intro-styles pg-font-size pg-width">
-            Lastly, we have a heatmap indicating the frequency that each demographic is having accidents relative to the time of day. Outside of the top 5 demographics which were shown in the first
-            graph it is more of a stretch to draw conclusive results from the other demographics due to their population size. I, however, for the sake of using all data provided decided to list them in
-            the event future data can be found. From studying the heatmap I came away with these key insights.
-          </p>
-          <ol class="intro-styles pg-font-size pg-width">
-            <li><p class="list-font-size">Traffic accidents in Los Angeles seem to pick up from about 7am to 7pm (hours 7-19). It is also notably very bad from 5pm to 7pm (hours 17-19) which is apparantly LA's version of rush hour.</p></li>
-            <li><p class="list-font-size">The frequency at which certain demographics seem to get involved in car accidents is quite consistent across the spectrum. Which is indicative that it is not so much an attributing factor to LA traffic accidents and that certain statistical suspects lay elsewhere.</p></li>
-          </ol>
+        <div class="col-lg-3 col-sm-2 col-xs-3 text-nowrap">
+          <ul style="margin-top: 1rem; margin-left: 4rem">
+              <li><h5><a href="http://localhost:4200/home#AboutMe" style="margin-top: 3rem;">ABOUT ME</a></h5></li>
+              <li><h5><a href="http://localhost:4200/home#WhereAmINow"> WHERE AM I NOW? </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#WhatTechDoIKnow"> WHAT TECHNOLOGIES DO I KNOW? </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#HistoryAboutMe"> HISTORY ABOUT ME </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#ContactMe"> CONTACT INFO </a> </h5></li>
+          </ul>
         </div>
       </div>
     </div>
-  </h1>
-</div>
-
+  </div>
+  <div class="footer-bottom">
+      <div class="container">
+          <p class="pull-left copyright"> Copyright © Me, until forever. All rights reserved.</p>
+      </div>
+  </div>
+</footer>

@@ -1,15 +1,134 @@
-<div class="nav-bar-container"></div>
-<div *ngIf="FrontPageImage">
-  <img src="{{FrontPageImage}}" alt="Picture of Justin Valenzuela" class="home-page-img">
+<div class="jumbotron jumbo-resize" #home>
+  <h1 class="display-4">Hello, World!</h1>
+  <div class="image-container" align="right">
+    <img src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/IMG_6951.JPG" class="img-thumbnail img-resize" alt="Picture of Justin Valenzuela">
+  </div>
+  <hr class="my-4">
+  <p class="lead" style="font-size: 28px;">My name is Justin Valenzuela. I am a Software Developer for hire.</p>
+  <hr class="my-4">
+  <p class="lead" style="font-size: 19px;">Recruiters are welcome to look around to browse my website, projects, and code to see if my tech skillset interest you.
+  A resume download can be found below or on the navbar itself. Enjoy!</p>
+  <hr class="my-4">
+  <div class="center">
+    <button [ngx-scroll-to]="AboutMe" class="btn btn-primary btn-lg b-margins b-color" role="button">About Me</button>
+    <a class="btn btn-primary btn-lg b-margins b-color" href="https://dl.dropboxusercontent.com/s/7zjeloxk7hatssz/justin-valenzuela-resume.docx?dl=0" role="button">Resume</a>
+    <button [ngx-scroll-to]="ContactMe" class="btn btn-primary btn-lg b-margins b-color" role="button">Contact Me</button>
+  </div>
 </div>
 
-<h1 class="center main-page-border">Hello and Welcome to my Website!</h1>
 
-<p class="center transparent-container main-page-font white">
-  I am Justin Valenzuela, a young aspiring Software Engineer. This site was made to host additional information
-  that may prove useful to hiring managers and recruiters. This information can be found on the about me page. <br><br> This site is also where I am hosting data science projects
-  that use many of my core skills that I have listed on my resume and I would like to invite you to explore them. You will find links to them
-  on the navigation bar at the top of this page under projects.
-</p>
+<div id="AboutMe" class="jumbotron jumbotron-fluid jumbo-margins" #AboutMe>
+  <div class="container">
+    <h1 class="display-4">About Me</h1>
+    <p class="lead">Hi there! My name is Justin Valenzuela and welcome to my website. In the interest of making information
+    easier to find I decided to break it up into smaller topics you can browse if you so desire. Thank you for taking
+    the time to learn more about me.
+    </p>
+    <br>
+    <div id="WhereAmINow" class="offset">
+      <h1 class="display-5" style="font-size: 30px;">Where am I now?</h1>
+      <p class="lead">I am actively seeking employment as a Software Developer. I have my language roots in Java and Python with some branching
+      interests into web development. I made this website with the goal in mind of showcasing that I am capable of working with the full architecture
+      of a stack. I believe myself to be a fast learner and I am not afraid to jump into new topics. I believe as a developer for your company
+      I can make a valuable addition to your team. Given the chance I will exemplify hard work and dedication to your future projects.</p>
+      <br>
+    </div>
+    <div id="WhatTechDoIKnow" class="offset">
+      <h1 class="display-5" style="font-size: 30px;">What technologies do I know?</h1>
+      <p class="lead">My main languages are Java and Python. However, I have familiarized myself quite well with Angular 8 and TypeScript/JavaScript for this project. While TS/JS are not my main languages I
+      believe it relevant to highlight that I can produce in them. I am not afraid to challenge myself and step out of the comfort zone to build in
+      technologies that are new to me.<br><br>Below are some examples of such new technologies I learned to create this project and what I did with them.</p>
+      <br>
+      <ol class="lead">
+        <li><p class="lead">Amazon Web Services (AWS)</p></li>
+          <ul class="lead">
+            <li><p class="lead">Registered my website domain via Route 53 and retrieved my SSL certificate from the AWS certificate manager</p></li>
+            <li><p class="lead">Hosted all website files via S3 to allow for static website hosting</p></li>
+            <li><p class="lead">Utilized Cloudfront to allow for a faster content delivery network</p></li>
+            <li><p class="lead">Set up Continuous Integration and Continuous Deployment (CI/CD) using CodePipeline and CodeBuild. This was made possible by syncing my
+            github with CodePipeline whenever I make commits</p></li>
+          </ul>
+        <li><p class="lead">Angular 8 / Bootstrap</p></li>
+          <ul class="lead">
+            <li><p class="lead">Learned Angular 8 from scratch and read much of the documentation which proved invaluable</p></li>
+            <li><p class="lead">With that knowledge I created highly modularized components and followed standards for encapsulated component CSS</p></li>
+            <li><p class="lead">Utilized the Bootstrap library to create a more responsive components</p></li>
+            <li><p class="lead">Component prototypes were built quickly using this method which lead to smoother development</p></li>
+          </ul>
+        <li><p class="lead">Django Rest API (Work in Progress 2/20/2020)</p></li>
+          <ul class="lead">
+            <li><p class="lead">Currently learning and developing in Django with Python to develop an API for my website</p></li>
+            <li><p class="lead">The API will be used to retrieve highscore data from my AWS database for my Minesweeper game</p></li>
+            <li><p class="lead">The Minesweeper game is being built in Java and once both are finished I will create their own page on the website</p></li>
+          </ul>
+      </ol>
+      <br>
+    </div>
+    <div id="HistoryAboutMe" class="offset">
+      <h1 class="display-5" style="font-size: 30px;">Some history about me.</h1>
+      <p class="lead">I grew up and have lived all over sunny California. From Los Angeles to Sacramento I enjoyed all the state has to offer. From camping on beaches as a kid in boy scouts
+      to paintballing on our friends open land in the Central Valley for many years California was my home.<br><br>After college graduation from California State University
+      Sacramento, I came here to Washington to pursue a career in Software Development in the Seattle area. I have always had a love for the sciences, for logic and reason. I am
+      natural tinkerer and problem solver. Those who know me know I love to stand up and walk around as I think. Talking myself through the problems and trying to prove my own
+      assertions wrong; being my own devils advocate.<br><br>I am someone who values their place on a team. I'll be the first to offer assistance and share knowledge If I can. In this way I like to be a contributor.
+      My passion not only extends to learning, but also to teaching. If I see myself lacking in some knowledge or skill I go and learn it. This way I can be of assistance and pass it forward. It is
+      also my goal for my team to value me as someone who is reliable and easy to talk to. Nothing makes for a better team than clear communication.</p>
+      <br>
+      <p class="lead">Well I hope this gives you some insight into the kind of person/developer I am. If you would like to know more I am only an email or phone call away.
+      Down below you will find all my contact information along with some links to my other media presence.</p>
+    </div>
+  </div>
+</div>
+
+<div id="ContactMe" class="offset">
+  <div class="jumbotron jumbotron-fluid jumbo-margins" #ContactMe>
+    <div class="container">
+      <h1 class="display-4">Contact Information</h1>
+      <p class="lead">Fullname: Justin Valenzuela</p>
+      <br>
+      <p class="lead">Email: jst.valen@gmail.com</p>
+      <br>
+      <p class="lead">CellPhone:  (559)-731-5551</p>
+      <br>
+      <p class="lead">Github: <a href="https://github.com/Justvalen">Github Link</a></p>
+      <br>
+      <p class="lead">LinkedIn: <a href="https://www.linkedin.com/in/justin-valenzuela-96247b192">My Linkedin Page</a></p>
+      <br>
+    </div>
+  </div>
+</div>
 
 
+<footer>
+  <div class="footer" id="footer" style="margin-top: 7rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-nowrap">
+            <h1 style="margin-top: 2rem; color: white;">Justin's Website</h1>
+        </div>
+        <div class="col-lg-3 col-sm-2 col-xs-3 text-nowrap">
+          <h3 style="margin-top: .5rem;"> Contact </h3>
+          <ul>
+              <li><a class="email" style="font-size: 20px; color: white;">jst.valen@gmail.com</a></li>
+              <br/>
+              <li><a class="email" style="font-size: 20px; color: white;">(559)-731-5551</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-sm-2 col-xs-3 text-nowrap">
+          <ul style="margin-top: 1rem; margin-left: 4rem">
+              <li><h5><a href="http://localhost:4200/home#AboutMe" style="margin-top: 3rem;">ABOUT ME</a></h5></li>
+              <li><h5><a href="http://localhost:4200/home#WhereAmINow"> WHERE AM I NOW? </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#WhatTechDoIKnow"> WHAT TECHNOLOGIES DO I KNOW? </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#HistoryAboutMe"> HISTORY ABOUT ME </a> </h5></li>
+              <li><h5><a href="http://localhost:4200/home#ContactMe"> CONTACT INFO </a> </h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+      <div class="container">
+          <p class="pull-left copyright"> Copyright © Me, until forever. All rights reserved.</p>
+      </div>
+  </div>
+</footer>

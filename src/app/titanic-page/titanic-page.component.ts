@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { RestApiService } from '../services/rest-api.service';
 import { Graph } from '../graph';
 
 @Component({
   selector: 'app-titanic-page',
   templateUrl: './titanic-page.component.html',
-  styleUrls: ['./titanic-page.component.scss']
+  styleUrls: ['./titanic-page.component.scss'],
 })
 export class TitanicPageComponent implements OnInit {
 

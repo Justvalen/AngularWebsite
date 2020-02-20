@@ -10,13 +10,6 @@ p, .p {
   font-size: 17px;
 }
 
-h1 {
-  font-size: 65px;
-  font-family: 'Roboto Condensed', sans-serif;
-  color: white;
-  text-align: center;
-}
-
 .white {
   color: white;
 }
@@ -33,13 +26,9 @@ h1 {
   text-align: left;
 }
 
-.below-img {
-  margin-top: 50px;
-}
-
 body {
-  background: rgb(90, 119, 143);
-  background: url(https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/background-board-carpentry-construction-301378.jpg) no-repeat center center fixed;
+  background: rgba(59, 47, 14, 0.39);
+  //background: url(https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/background-board-carpentry-construction-301378.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
