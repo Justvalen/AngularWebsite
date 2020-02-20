@@ -3,6 +3,7 @@
   margin: auto;
   margin-top: 5rem;
   max-width: 90rem;
+  max-height: fit-content;
 }
 
 h1 {
@@ -24,7 +25,6 @@ h1 {
   column-count: 3;
   column-gap: 10px;
   text-align: center;
-  list-style-position: outside;
 }
 
 .list-width {
