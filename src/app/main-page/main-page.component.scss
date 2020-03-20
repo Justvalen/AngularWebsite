@@ -1,28 +1,28 @@
-.img-resize {
-  transform: rotate(90deg);
-  max-height: 100%;
-  min-width: 50%;
-  max-width: 100%;
-  margin-top: 3rem;
+.image-container .img-resize {
+
 }
 
 .image-container {
-  display: inline-block;
-  height: 25rem;
-  width: 25rem;
+  width: 100%;
+  height: 20.75rem;
+  text-align: center;
+  position: relative;
 }
 
-.jumbo-resize {
-  display: block;
-  max-width: 50rem;
-  max-height: 50rem;
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.jumbo1 {
+  max-width: 47%;
+  max-height: auto;
   margin: auto;
-  margin-top: 5rem;
-
+  margin-top: 5%;
 }
 
-h1 {
-  font-size: 50px;
+.jumbotron h1 {
+  font-size: 3.125rem;
   font-family: 'Roboto Condensed', sans-serif;
   color: black;
   display: inline-block;
@@ -56,109 +56,5 @@ h1 {
   height: 56px;      /* Give height of your fixed element */
       margin-top: -56px; /* Give negative margin of your fixed element */
       visibility: hidden;
-}
-
-.full {
-  width: 100%;
-}
-.gap {
-height: 30px;
-width: 100%;
-clear: both;
-display: block;
-}
-.footer {
-background: #002147;
-height: auto;
-padding-bottom: 30px;
-position: relative;
-width: 100%;
-border-bottom: 1px solid #CCCCCC;
-border-top: 1px solid #DDDDDD;
-}
-.footer p {
-margin: 0;
-}
-.footer img {
-max-width: 100%;
-}
-.footer h3 {
-color: white;
-font-size: 18px;
-font-weight: 600;
-line-height: 27px;
-padding: 40px 0 0px;
-text-transform: uppercase;
-margin-bottom: 15px;
-}
-
-.footer h4 {
-color: white;
-font-size: 2em;
-font-weight: 600;
-line-height: 38px;
-padding: 40px 0 10px;
-font-family: cursive;
-font-weight: lighter
-}
-
-.footer ul {
-font-size: 13px;
-list-style-type: none;
-margin-left: 0;
-padding-left: 0;
-margin-top: 0px;
-color: #7F8C8D;
-padding: 0 0 8px 0;
-}
-
-.email{
-border-bottom: 3px solid #fff;
-}
-.footer ul li a {
-padding: 0 0 12px 0;
-display: block;
-}
-.footer a {
-color: white;
-font-weight: lighter;
-}
-
-.footer p {
-color: white;
-font-weight: lighter;
-font-size: 25px;
-}
-
-.footer a:hover {
-text-decoration:none;
-font-weight: bold;
-}
-.supportLi h4 {
-font-size: 20px;
-font-weight: lighter;
-line-height: normal;
-margin-bottom: 0 !important;
-padding-bottom: 0;
-}
-
-.bg-gray {
-background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-box-shadow: 0 1px 0 #B4B3B3;
-}
-
-.footer a {
-color: #78828D
-}
-
-.footer-bottom {
-margin-top: 2em;
-border-top: 1px solid #DDDDDD;
-padding-top: 20px;
-padding-bottom: 10px;
-}
-.footer-bottom p.pull-left {
-padding-top: 6px;
-font-size: 0.75em
 }
 
