@@ -14,6 +14,7 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { TitanicPageComponent } from './titanic-page/titanic-page.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { TitanicPageComponent } from './titanic-page/titanic-page.component';
     ProjectsComponent,
     LaTrafficPageComponent,
     TitanicPageComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
