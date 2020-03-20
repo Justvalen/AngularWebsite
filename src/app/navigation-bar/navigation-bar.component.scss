@@ -1,20 +1,72 @@
-.fixed {
-  position: fixed;
-  white-space: nowrap;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.my-navbar {
-  min-height: 7%;
-  max-height: 7%;
-  width: 100%;
-  left: 0;
-  top: 0;
-  font-size: 20px;
+.wrap {
+  display: inline-flex;
 }
 
 .small-container {
   max-width: 10%;
+}
+
+.navbar-nav {
+  flex-direction: row;
+  display: flex;
+}
+
+.navbar-expand-md {
+  justify-content: flex-start;
+}
+
+@media only screen and (max-width: 992px) {
+  .navbar-header .header-styles {
+    font-size: 1.15rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-header .header-styles {
+    font-size: 1.05rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .95rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-header .header-styles {
+    font-size: 1rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .90rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .navbar-header .header-styles {
+    font-size: .90rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .80rem;
+  }
+}
+
+@media only screen and (max-width: 451px) {
+  .navbar-header .header-styles {
+    font-size: .80rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .70rem;
+  }
 }
 
