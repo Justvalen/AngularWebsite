@@ -37,7 +37,7 @@
 
 .btn {
   margin: 1rem;
-  display: inline-block
+  width: 9rem;
 }
 
 .b-color {
@@ -45,6 +45,8 @@
 }
 
 .button-layout {
+  width: 100%;
+  display: block;
   text-align: center;
 }
 
@@ -61,72 +63,104 @@
 }
 
 
-
-
-@media only screen and (max-width: 480px) {
-}
-
-@media only screen and (max-width: 451px) {
+@media only screen and (max-width: 1440px) {
   .jumbo-resize {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
     margin: auto;
-    margin-top: 11%;
+    margin-top: 2%;
   }
   .image-container {
-    width: 12rem;
+    width: 15rem;
     height: auto;
     position: relative;
     display: inline-block;
   }
-  .header-text-container p {
-    font-size: 1rem;
+  .jumbo-margins {
+    margin-top: 2%;
   }
+  .btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 2560px) {
+  .jumbo-resize {
+    max-width: 30%;
+    height: auto;
+    margin: auto;
+    margin-top: 1%;
+  }
+  .image-container {
+    width: 15rem;
+    height: auto;
+    position: relative;
+    display: inline-block;
+  }
+  .jumbo-margins {
+    margin-top: 2%;
+  }
+  .btn {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 1920px) {
+  .jumbo-resize {
+    max-width: 35%;
+    margin-top: 1%;
+  }
+  .image-container {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .jumbo-resize {
+    max-width: 70%;
+  }
+  .image-container {
+    width: 14rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .jumbotron {
     max-width: 100%;
+  }
+  .jumbo-resize {
+    max-width: 100%;
+    margin-top: 2%;
+  }
+  .image-container {
+    width: 13rem;
   }
   .jumbo-margins {
     margin-top: 0%;
   }
-  .btn {
-    margin: .4rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .jumbo-resize {
+    margin-top: 7%;
   }
-  .button-layout {
-    text-align: none;
+  .image-container {
+    width: 12rem;
+  }
+  .btn {
+    font-size: 1rem;
   }
 }
 
-
 @media only screen and (max-width: 280px) {
   .jumbo-resize {
-    max-width: 100%;
-    height: auto;
-    margin: auto;
     margin-top: 15%;
   }
   .image-container {
     width: 10rem;
-    height: auto;
-    position: relative;
-    display: inline-block;
-  }
-  .jumbotron {
-    max-width: 100%;
-  }
-  .jumbo-margins {
-    margin-top: 0%;
   }
   .jumbotron h1 {
     font-size: 1.875rem;
-  }
-  .jumbotron h1 {
-    font-size: 1.875rem;
-  }
-  .btn {
-    margin: 1rem;
-  }
-  .button-layout {
-    text-align: none;
   }
 }
 
