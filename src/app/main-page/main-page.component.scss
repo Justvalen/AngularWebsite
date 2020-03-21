@@ -58,8 +58,8 @@
   display: block;
   content: " ";
   height: 56px;      /* Give height of your fixed element */
-      margin-top: -56px; /* Give negative margin of your fixed element */
-      visibility: hidden;
+  margin-top: -56px; /* Give negative margin of your fixed element */
+  visibility: hidden;
 }
 
 @media only screen and (max-width: 2560px) {
