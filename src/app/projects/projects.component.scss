@@ -1,13 +1,47 @@
-.projects-cards {
-  height: 30%;
-  max-height: 40%;
-  width: 30%;
-  max-width: 40%;
-  border: solid 2px black;
-  margin-top: 8%;
-  position: relative;
+.card {
+  margin: 2%;
+  max-width: 100%;
 }
 
-.card-box-size {
-  max-width: 60%;
+.card-container {
+  margin-top: 4%;
+}
+
+@media only screen and (max-width:2560px) {
+  .card-container {
+    margin-top: 2%;
+  }
+  .card {
+    margin: 7%;
+  }
+}
+
+@media only screen and (max-width:1440px) {
+  .card-container {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:1024px) {
+  .card-container {
+    margin-top: 8%;
+  }
+  .card {
+    margin: 5%;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  .card-container {
+    margin-top: 15%;
+  }
+  .card {
+    margin: 3%;
+  }
+}
+
+@media only screen and (max-width:425px) {
+  .card-container {
+    margin-top: 20%;
+  }
 }
