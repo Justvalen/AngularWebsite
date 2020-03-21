@@ -1,18 +1,22 @@
-<div class="jumbotron jumbo1" #home>
+<div class="jumbotron jumbo-resize" #home>
   <!--<h1 class="display-4">Hello, World!</h1> -->
-  <div class="image-container">
-    <img src="https://s3-us-west-2.amazonaws.com/justinvalen.com/assets/IMG_6951.JPG" class="img-resize img-thumbnail" alt="Picture of Justin Valenzuela">
+  <div style="text-align: center;">
+    <div class="image-container">
+      <img src="https://s3-us-west-2.amazonaws.com/justinvalen.com/IMG_6951.JPG" class="img-resize img-thumbnail" alt="Picture of Justin Valenzuela">
+    </div>
   </div>
-  <hr class="my-4">
-  <p class="lead" style="font-size: 28px;">My name is Justin Valenzuela. I am a Software Developer for hire.</p>
-  <hr class="my-4">
-  <p class="lead" style="font-size: 19px;">Recruiters are welcome to look around to browse my website, projects, and code to see if my tech skillset interest you.
-  A resume download can be found below or on the navbar itself. Enjoy!</p>
-  <hr class="my-4">
-  <div class="center">
-    <button [ngx-scroll-to]="AboutMe" class="btn btn-primary btn-lg b-margins b-color" role="button">About Me</button>
-    <a class="btn btn-primary btn-lg b-margins b-color" href="https://dl.dropboxusercontent.com/s/17m46rvwm572fkp/justin-valenzuela-resume.docx?dl=0" role="button">Resume</a>
-    <button [ngx-scroll-to]="ContactMe" class="btn btn-primary btn-lg b-margins b-color" role="button">Contact Me</button>
+  <div class="header-text-container">
+    <hr class="my-4">
+    <p class="lead">My name is Justin Valenzuela. I am a Software Developer for hire.</p>
+    <hr class="my-4">
+    <p class="lead">Recruiters and Hiring Managers are welcome to look around to browse my website, projects, and code to see if my tech skillset interest you.<br><br>
+    My resume direct download links can be found on the navbar or down below.</p>
+    <hr class="my-4">
+    <div class="button-layout">
+      <button [ngx-scroll-to]="AboutMe" class="btn btn-primary btn-lg b-color" role="button">About Me</button>
+      <a class="btn btn-primary btn-lg b-color" href="https://dl.dropboxusercontent.com/s/17m46rvwm572fkp/justin-valenzuela-resume.docx?dl=0" role="button">Resume</a>
+      <button [ngx-scroll-to]="ContactMe" class="btn btn-primary btn-lg b-color" role="button">Contact Me</button>
+    </div>
   </div>
 </div>
 

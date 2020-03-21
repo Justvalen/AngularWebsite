@@ -61,12 +61,23 @@
 
 @media only screen and (max-width: 451px) {
   .navbar-header .header-styles {
-    font-size: .80rem;
+    font-size: .90rem;
   }
 
   .navbar-nav .nav-item {
     padding-right: .25rem;
+    font-size: .87rem;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .navbar-header .header-styles {
     font-size: .70rem;
+  }
+
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .60rem;
   }
 }
 
