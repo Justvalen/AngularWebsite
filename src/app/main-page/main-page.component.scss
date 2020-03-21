@@ -25,7 +25,7 @@
 }
 
 .jumbotron p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .header-text-container {
@@ -62,28 +62,6 @@
       visibility: hidden;
 }
 
-
-@media only screen and (max-width: 1440px) {
-  .jumbo-resize {
-    max-width: 75%;
-    height: auto;
-    margin: auto;
-    margin-top: 2%;
-  }
-  .image-container {
-    width: 15rem;
-    height: auto;
-    position: relative;
-    display: inline-block;
-  }
-  .jumbo-margins {
-    margin-top: 2%;
-  }
-  .btn {
-    font-size: 1.3rem;
-  }
-}
-
 @media only screen and (max-width: 2560px) {
   .jumbo-resize {
     max-width: 30%;
@@ -115,12 +93,31 @@
   }
 }
 
+@media only screen and (max-width: 1440px) {
+  .jumbotron {
+    max-width: 100%;
+  }
+  .jumbo-resize {
+    max-width: 75%;
+    margin-top: 2%;
+  }
+  .jumbotron h1 {
+    font-size: 2rem;
+  }
+  .image-container {
+    width: 14rem;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   .jumbo-resize {
     max-width: 70%;
   }
   .image-container {
     width: 14rem;
+  }
+  .jumbotron h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -138,6 +135,9 @@
   .jumbo-margins {
     margin-top: 0%;
   }
+  .jumbotron h1 {
+    font-size: 1.6rem;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -150,6 +150,9 @@
   .btn {
     font-size: 1rem;
   }
+  .jumbotron h1 {
+    font-size: 1.7rem;
+  }
 }
 
 @media only screen and (max-width: 280px) {
@@ -160,7 +163,7 @@
     width: 10rem;
   }
   .jumbotron h1 {
-    font-size: 1.875rem;
+    font-size: 1.6rem;
   }
 }
 
