@@ -3,7 +3,7 @@
 }
 
 .gap {
-  height: 30px;
+  height: 1.875rem;
   width: 100%;
   clear: both;
   display: block;
@@ -12,11 +12,11 @@
 .footer {
   background: #002147;
   height: auto;
-  padding-bottom: 30px;
+  padding-bottom: 1.875rem;
   position: relative;
   width: 100%;
-  border-bottom: 1px solid #CCCCCC;
-  border-top: 1px solid #DDDDDD;
+  border-bottom: .0625rem solid #CCCCCC;
+  border-top: .0625rem solid #DDDDDD;
 }
 
 .link-list {
@@ -42,40 +42,40 @@
 
 .footer h3 {
   color: white;
-  font-size: 18px;
+  font-size: 1rem;
   font-weight: 600;
-  line-height: 27px;
-  padding: 40px 0 0px;
+  line-height: 1.6875rem;
+  padding: 2.5rem 0rem 0rem;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: .9375rem;
 }
 
 .footer h4 {
   color: white;
-  font-size: 2em;
+  font-size: 2rem;
   font-weight: 600;
-  line-height: 38px;
-  padding: 40px 0 10px;
+  line-height: 2.375rem;
+  padding: 2.5rem 0rem .625rem;
   font-family: cursive;
   font-weight: lighter;
 }
 
 .footer ul {
-  font-size: 13px;
+  font-size: .8125rem;
   list-style-type: none;
   margin-left: 0;
   padding-left: 0;
-  margin-top: 0px;
+  margin-top: 0rem;
   color: #7F8C8D;
   padding: 0 0 8px 0;
 }
 
 .email{
-  border-bottom: 3px solid #fff;
+  border-bottom: .1875rem solid #fff;
 }
 
 .footer ul li a {
-  padding: 0 0 12px 0;
+  padding: 0 0 .75rem 0;
   display: block;
 }
 
@@ -87,7 +87,7 @@
 .footer p {
   color: white;
   font-weight: lighter;
-  font-size: 25px;
+  font-size: 1.5625rem;
 }
 
 .footer a:hover {
@@ -96,7 +96,7 @@
 }
 
 .supportLi h4 {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: lighter;
   line-height: normal;
   margin-bottom: 0 !important;
@@ -105,7 +105,7 @@
 
 .bg-gray {
   background-image: -moz-linear-gradient(center bottom, #BBBBBB 0%, #F0F0F0 100%);
-  box-shadow: 0 1px 0 #B4B3B3;
+  box-shadow: 0 .0625rem 0 #B4B3B3;
 }
 
 .footer a {
@@ -113,12 +113,83 @@
 }
 
 .footer-bottom {
-  margin-top: 2em;
-  border-top: 1px solid #DDDDDD;
-  padding-top: 20px;
-  padding-bottom: 10px;
+  margin-top: 2rem;
+  border-top: .0625rem solid #DDDDDD;
+  padding-top: 1.25rem;
+  padding-bottom: .625rem;
 }
 .footer-bottom p.pull-left {
-  padding-top: 6px;
-  font-size: 0.75em
+  padding-top: .375rem;
+  font-size: 0.75rem
+}
+
+@media only screen and (max-width: 2560px) {
+  .footer-header {
+    margin-top: 12%;
+  }
+  .link-list {
+    margin-top: 5%;
+  }
+  .contact-list {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .footer-header {
+    margin-top: 12%;
+  }
+  .link-list {
+    margin-top: 5%;
+  }
+  .contact-list {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .footer-header {
+    margin-top: 13%;
+  }
+  .link-list {
+    margin-top: 5%;
+  }
+  .contact-list {
+    margin-top: 3%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer h1 {
+    font-size: 1.8rem;
+  }
+  .footer h5 {
+    font-size: 1rem;
+  }
+  .email {
+    font-size: .7rem;
+  }
+  .link-list {
+    margin-top: 5%;
+  }
+
+  .footer-header {
+    margin-top: 15%;
+  }
+
+  .contact-list {
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .footer h1 {
+    font-size: 2rem;
+  }
+  .footer h5 {
+    font-size: 1rem;
+  }
+  .email {
+    font-size: 1rem;
+  }
 }

@@ -63,10 +63,19 @@
   .navbar-header .header-styles {
     font-size: .90rem;
   }
-
   .navbar-nav .nav-item {
     padding-right: .25rem;
     font-size: .87rem;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .navbar-header .header-styles {
+    font-size: .68rem;
+  }
+  .navbar-nav .nav-item {
+    padding-right: .25rem;
+    font-size: .63rem;
   }
 }
 
@@ -74,10 +83,9 @@
   .navbar-header .header-styles {
     font-size: .60rem;
   }
-
   .navbar-nav .nav-item {
     padding-right: .25rem;
-    font-size: .57rem;
+    font-size: .58rem;
   }
 }
 
