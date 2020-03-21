@@ -24,6 +24,10 @@
   display: inline-block;
 }
 
+.jumbotron p {
+  font-size: 1rem;
+}
+
 .header-text-container {
   width: 100%;
   display: block;
@@ -63,6 +67,33 @@
 }
 
 @media only screen and (max-width: 451px) {
+  .jumbo-resize {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    margin-top: 11%;
+  }
+  .image-container {
+    width: 12rem;
+    height: auto;
+    position: relative;
+    display: inline-block;
+  }
+  .header-text-container p {
+    font-size: 1rem;
+  }
+  .jumbotron {
+    max-width: 100%;
+  }
+  .jumbo-margins {
+    margin-top: 0%;
+  }
+  .btn {
+    margin: .4rem;
+  }
+  .button-layout {
+    text-align: none;
+  }
 }
 
 
@@ -79,14 +110,17 @@
     position: relative;
     display: inline-block;
   }
-  .header-text-container p {
-    font-size: 1rem;
-  }
   .jumbotron {
     max-width: 100%;
   }
-  .jumbotron p {
-    font-size: 1rem;
+  .jumbo-margins {
+    margin-top: 0%;
+  }
+  .jumbotron h1 {
+    font-size: 1.875rem;
+  }
+  .jumbotron h1 {
+    font-size: 1.875rem;
   }
   .btn {
     margin: .4rem;
