@@ -125,6 +125,15 @@
 }
 
 @media only screen and (max-width: 2560px) {
+  .footer h1 {
+    font-size: 2rem;
+  }
+  .footer h5 {
+    font-size: 1.2rem;
+  }
+  .email {
+    font-size: 1.2rem;
+  }
   .footer-header {
     margin-top: 12%;
   }
@@ -137,11 +146,20 @@
 }
 
 @media only screen and (max-width: 1440px) {
+  .footer h1 {
+    font-size: 1.4rem;
+  }
+  .footer h5 {
+    font-size: .9rem;
+  }
+  .email {
+    font-size: 1rem;
+  }
   .footer-header {
     margin-top: 12%;
   }
   .link-list {
-    margin-top: 5%;
+    margin-top: 6%;
   }
   .contact-list {
     margin-top: 3%;
@@ -158,23 +176,41 @@
   .contact-list {
     margin-top: 3%;
   }
+  .link-list {
+    margin-top: 7%;
+  }
 }
 
 @media only screen and (max-width: 991px) {
   .footer h1 {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
+  }
+  .footer h5 {
+    font-size: .8rem;
+  }
+  .email {
+    font-size: 1rem;
   }
   .footer-header {
     margin-top: 17%;
   }
+  .link-list {
+    margin-top: 9%;
+  }
 }
 
 @media only screen and (max-width: 901px) {
+  .footer h1 {
+    font-size: 1.2rem;
+  }
   .footer h5 {
-    font-size: .95rem;
+    font-size: .8rem;
+  }
+  .email {
+    font-size: 1rem;
   }
   .link-list {
-    margin-top: 7%;
+    margin-top: 8%;
   }
 }
 
@@ -191,11 +227,9 @@
   .link-list {
     margin-top: 5%;
   }
-
   .footer-header {
     margin-top: 21%;
   }
-
   .contact-list {
     margin-top: 1%;
   }
@@ -208,11 +242,20 @@
   .link-list {
     margin-top: 8%;
   }
+  .footer h1 {
+    font-size: .8rem;
+  }
+  .footer h5 {
+    font-size: .60rem;
+  }
+  .email {
+    font-size: .8rem;
+  }
 }
 
 @media only screen and (max-width: 665px) {
   .footer h1 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .footer-header {
     margin-top: 21%;
@@ -224,34 +267,34 @@
     margin-top: 1%;
   }
   .footer h5 {
-    font-size: .68rem;
+    font-size: .60rem;
   }
   .link-list {
-    margin-top: 8%;
+    margin-top: 10%;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .footer h1 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .footer-header {
     margin-top: 15%;
   }
   .email {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .footer h5 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 }
 
 @media only screen and (max-width: 320px) {
   .footer h1 {
-    font-size: 2rem;
+    font-size: 1.3rem;
   }
   .footer h5 {
-    font-size: 1rem;
+    font-size: .93rem;
   }
   .email {
     font-size: 1rem;
