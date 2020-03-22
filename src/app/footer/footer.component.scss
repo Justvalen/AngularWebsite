@@ -72,6 +72,7 @@
 
 .email{
   border-bottom: .1875rem solid #fff;
+  color: white;
 }
 
 .footer ul li a {
@@ -159,9 +160,27 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
   .footer h1 {
     font-size: 1.8rem;
+  }
+  .footer-header {
+    margin-top: 17%;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  .footer h5 {
+    font-size: .95rem;
+  }
+  .link-list {
+    margin-top: 7%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer h1 {
+    font-size: 1.4rem;
   }
   .footer h5 {
     font-size: 1rem;
@@ -174,11 +193,56 @@
   }
 
   .footer-header {
-    margin-top: 15%;
+    margin-top: 21%;
   }
 
   .contact-list {
     margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .footer h5 {
+    font-size: .9rem;
+  }
+  .link-list {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .footer h1 {
+    font-size: 1.2rem;
+  }
+  .footer-header {
+    margin-top: 21%;
+  }
+  .email {
+    font-size: 1rem;
+  }
+  .contact-list {
+    margin-top: 1%;
+  }
+  .footer h5 {
+    font-size: .73rem;
+  }
+  .link-list {
+    margin-top: 8%;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .footer h1 {
+    font-size: 1.4rem;
+  }
+  .footer-header {
+    margin-top: 15%;
+  }
+  .email {
+    font-size: 1.2rem;
+  }
+  .footer h5 {
+    font-size: 1.2rem;
   }
 }
 
